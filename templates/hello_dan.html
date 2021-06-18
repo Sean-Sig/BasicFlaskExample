@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Dan</title>
+</head>
+<body>
+<!-- Example of how to access that data in api route -->
+<h1>{{ hello_text }}</h1>
+<!-- Example of if statement in python code -->
+{% if page == 1 %}
+    <a href="{{ url_for("hello_other") }}">Next Page</a>
+{% else %}
+    <a href="{{ url_for("hello") }}">Previous Page</a>
+{% endif %}
+</body>
+</html>
